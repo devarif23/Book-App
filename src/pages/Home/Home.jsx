@@ -1,0 +1,17 @@
+import { useLoaderData } from "react-router";
+import Banner from "../Banner/Banner";
+import Books from "../Books/Books";
+
+const Home = () => {
+    const data = useLoaderData()
+    /* // console.log(data); */
+    
+    return (
+        <div>
+            <Banner />
+            <Books data={data}/>
+        </div>
+    );
+};
+
+export default Home;
